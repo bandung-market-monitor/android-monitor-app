@@ -15,4 +15,7 @@
         completions."
     </string>
     <string name="login_title">Login</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="login_text">Login</string>
 </resources>
