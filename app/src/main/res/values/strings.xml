@@ -18,4 +18,20 @@
     <string name="email_hint">Email</string>
     <string name="password_hint">Password</string>
     <string name="login_text">Login</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_beras_medium">Harga Beras Medium</string>
+    <string name="text_next">Next</string>
+    <string name="text_minyak_kelapa">Harga Minyak Kelapa</string>
+    <string name="text_tepung_terigu">Harga Tepung Terigu</string>
+    <string name="text_kacang_kedelai">Harga Kacang Kedelai</string>
+    <string name="text_gula_pasir">Harga Gula Pasir</string>
+    <string name="text_mentega">Harga Mentega</string>
+    <string name="text_telur_ayam">Harga Telur Ayam</string>
+    <string name="text_daging_sapi">Harga Daging Sapi</string>
+    <string name="text_ayam_potong">Harga Ayam Potong</string>
+    <string name="text_ikan_lele">Harga Ikan Lele</string>
+    <string name="text_tanggal">Tanggal</string>
+    <string name="text_pasar">Pasar</string>
 </resources>

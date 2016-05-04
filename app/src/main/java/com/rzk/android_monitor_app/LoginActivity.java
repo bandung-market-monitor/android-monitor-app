@@ -1,5 +1,6 @@
 package com.rzk.android_monitor_app;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -18,5 +19,7 @@ public class LoginActivity extends AppCompatActivity {
 
     public void login(View view) {
         //create login process
+        Intent intent = new Intent(this, PriceInputActivity.class);
+        startActivity(intent);
     }
 }
