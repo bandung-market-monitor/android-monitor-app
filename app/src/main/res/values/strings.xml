@@ -34,4 +34,16 @@
     <string name="text_ikan_lele">Harga Ikan Lele</string>
     <string name="text_tanggal">Tanggal</string>
     <string name="text_pasar">Pasar</string>
+    <string name="text_cabe_hijau">Harga Cabe Hijau</string>
+    <string name="text_cabe_merah">Harga Cabe Merah</string>
+    <string name="text_bawang_merah">Harga Bawang Merah</string>
+    <string name="text_cabe_rawit">Harga Cabe Rawit</string>
+    <string name="text_bawang_putih">Harga Bawang Putih</string>
+    <string name="text_tomat">Harga Tomat</string>
+    <string name="text_wortel">Harga Worte</string>
+    <string name="text_kentang">Harga Kentang</string>
+    <string name="text_pisang_ambon">Harga Pisang Ambon</string>
+    <string name="text_jeruk">Harga Jeruk</string>
+    <string name="text_gas_elpiji">Harga Gas Elpiji</string>
+    <string name="text_save">Save</string>
 </resources>
