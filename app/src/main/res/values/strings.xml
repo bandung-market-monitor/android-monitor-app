@@ -47,4 +47,6 @@
     <string name="text_gas_elpiji">Harga Gas Elpiji</string>
     <string name="text_save">Save</string>
     <string name="next_item_text">Next</string>
+    <string name="save_item_text">Save</string>
+    <string name="input_title">Input Data Barang</string>
 </resources>

@@ -10,7 +10,6 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 
 
 /**
@@ -22,7 +21,6 @@ import android.widget.Button;
 public class InputFirstPageFragment extends Fragment {
 
     private OnFragmentInteractionListener mListener;
-    Button buttonNext;
 
     public InputFirstPageFragment() {
         // Required empty public constructor
@@ -48,8 +46,15 @@ public class InputFirstPageFragment extends Fragment {
             bundle.putString("test", test);
             onButtonPressed(bundle);
 
+
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onOptionsMenuClosed(Menu menu) {
+        super.onOptionsMenuClosed(menu);
+        menu.clear();
     }
 
     @Override
@@ -57,16 +62,7 @@ public class InputFirstPageFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_input_first_page, container, false);
-        buttonNext = (Button) view.findViewById(R.id.btn_next_to_second_page);
-        buttonNext.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String test = "Test1";
-                Bundle bundle = new Bundle();
-                bundle.putString("test", test);
-                onButtonPressed(bundle);
-            }
-        });
+
         return view;
     }
 
