@@ -46,4 +46,5 @@
     <string name="text_jeruk">Harga Jeruk</string>
     <string name="text_gas_elpiji">Harga Gas Elpiji</string>
     <string name="text_save">Save</string>
+    <string name="next_item_text">Next</string>
 </resources>

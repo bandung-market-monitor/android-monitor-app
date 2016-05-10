@@ -2,8 +2,12 @@ package com.rzk.android_monitor_app;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -24,6 +28,29 @@ public class InputFirstPageFragment extends Fragment {
         // Required empty public constructor
     }
 
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setHasOptionsMenu(true);
+    }
+
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        inflater.inflate(R.menu.inputfirstfragment, menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int i = item.getItemId();
+        if (i == R.id.next_item) {
+            String test = "Test1";
+            Bundle bundle = new Bundle();
+            bundle.putString("test", test);
+            onButtonPressed(bundle);
+
+        }
+        return super.onOptionsItemSelected(item);
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -36,7 +63,7 @@ public class InputFirstPageFragment extends Fragment {
             public void onClick(View v) {
                 String test = "Test1";
                 Bundle bundle = new Bundle();
-                bundle.putString("test",test);
+                bundle.putString("test", test);
                 onButtonPressed(bundle);
             }
         });
@@ -72,7 +99,7 @@ public class InputFirstPageFragment extends Fragment {
      * fragment to allow an interaction in this fragment to be communicated
      * to the activity and potentially other fragments contained in that
      * activity.
-     * <p/>
+     * <p>
      * See the Android Training lesson <a href=
      * "http://developer.android.com/training/basics/fragments/communicating.html"
      * >Communicating with Other Fragments</a> for more information.
