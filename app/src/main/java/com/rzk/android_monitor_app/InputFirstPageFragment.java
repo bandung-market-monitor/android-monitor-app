@@ -3,6 +3,7 @@ package com.rzk.android_monitor_app;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.TextInputEditText;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -21,6 +22,9 @@ import android.view.ViewGroup;
 public class InputFirstPageFragment extends Fragment {
 
     private OnFragmentInteractionListener mListener;
+    private TextInputEditText editTextDate, editTextPasar, editTextBerasMedium, editTextMinyakKelapa;
+    private TextInputEditText editTextTepungTerigu, editTextKacangKedelai, editTextGulaPasir;
+    private TextInputEditText editTextMentega, editTextTelurAyam, editTextDagingSapi;
 
     public InputFirstPageFragment() {
         // Required empty public constructor

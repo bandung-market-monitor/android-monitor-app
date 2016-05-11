@@ -166,6 +166,7 @@
                 android:hint="@string/text_pisang_ambon"
                 android:inputType="number" />
         </android.support.design.widget.TextInputLayout>
+
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -179,6 +180,7 @@
                 android:hint="@string/text_jeruk"
                 android:inputType="number" />
         </android.support.design.widget.TextInputLayout>
+
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -192,10 +194,6 @@
                 android:hint="@string/text_gas_elpiji"
                 android:inputType="number" />
         </android.support.design.widget.TextInputLayout>
-
-
-
-
 
 
     </LinearLayout>

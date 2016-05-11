@@ -3,6 +3,7 @@ package com.rzk.android_monitor_app;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.TextInputEditText;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -18,6 +19,10 @@ import android.widget.Toast;
  */
 public class InputSecondPageFragment extends Fragment {
     Bundle bundle;
+    private TextInputEditText editTextAyamPotong, editTextIkanLele, editTextCabeMerah;
+    private TextInputEditText editTextCabeHijau, editTextBawangMerah, editTextCabeRawit;
+    private TextInputEditText editTextBawangPutih, editTextTomat, editTextWortel;
+    private TextInputEditText editTextKentang, editTextPisangAmbon, editTextJeruk, editTextGasElpiji;
 
 
     public InputSecondPageFragment() {
@@ -38,7 +43,7 @@ public class InputSecondPageFragment extends Fragment {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int i = item.getItemId();
-        if(i==R.id.save_item){
+        if (i == R.id.save_item) {
             getActivity().finish();
         }
         return super.onOptionsItemSelected(item);
