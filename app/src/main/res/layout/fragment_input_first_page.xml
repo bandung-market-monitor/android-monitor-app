@@ -18,7 +18,7 @@
             android:layout_marginBottom="2dp"
             android:layout_marginTop="2dp">
 
-            <EditText
+            <android.support.design.widget.TextInputEditText
                 android:id="@+id/input_date"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -32,7 +32,7 @@
             android:layout_marginBottom="2dp"
             android:layout_marginTop="2dp">
 
-            <EditText
+            <android.support.design.widget.TextInputEditText
                 android:id="@+id/input_pasar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -46,7 +46,7 @@
             android:layout_marginBottom="2dp"
             android:layout_marginTop="2dp">
 
-            <EditText
+            <android.support.design.widget.TextInputEditText
                 android:id="@+id/input_beras_medium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -61,7 +61,7 @@
             android:layout_marginBottom="2dp"
             android:layout_marginTop="2dp">
 
-            <EditText
+            <android.support.design.widget.TextInputEditText
                 android:id="@+id/input_minyak_kelapa"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -75,7 +75,7 @@
             android:layout_marginBottom="2dp"
             android:layout_marginTop="2dp">
 
-            <EditText
+            <android.support.design.widget.TextInputEditText
                 android:id="@+id/input_tepung_terigu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -89,7 +89,7 @@
             android:layout_marginBottom="2dp"
             android:layout_marginTop="2dp">
 
-            <EditText
+            <android.support.design.widget.TextInputEditText
                 android:id="@+id/input_kacang_kedelai"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -103,7 +103,7 @@
             android:layout_marginBottom="2dp"
             android:layout_marginTop="2dp">
 
-            <EditText
+            <android.support.design.widget.TextInputEditText
                 android:id="@+id/input_gula_pasir"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -117,7 +117,7 @@
             android:layout_marginBottom="2dp"
             android:layout_marginTop="2dp">
 
-            <EditText
+            android.support.design.widget.TextInputEditText
                 android:id="@+id/input_mentega"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -131,7 +131,7 @@
             android:layout_marginBottom="2dp"
             android:layout_marginTop="2dp">
 
-            <EditText
+            <android.support.design.widget.TextInputEditText
                 android:id="@+id/input_telur_ayam"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -145,7 +145,7 @@
             android:layout_marginBottom="2dp"
             android:layout_marginTop="2dp">
 
-            <EditText
+            <android.support.design.widget.TextInputEditText
                 android:id="@+id/input_daging_sapi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
