@@ -68,7 +68,7 @@ public class InputSecondPageFragment extends Fragment {
         editTextCabeRawit = (TextInputEditText) view.findViewById(R.id.input_cabe_rawit);
         editTextBawangPutih = (TextInputEditText) view.findViewById(R.id.input_bawang_putih);
         editTextTomat = (TextInputEditText) view.findViewById(R.id.input_tomat);
-        editTextWortel = (TextInputEditText) view.findViewById(R.id.input_wortel;
+        editTextWortel = (TextInputEditText) view.findViewById(R.id.input_wortel);
 
         return view;
     }
