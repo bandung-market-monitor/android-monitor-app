@@ -11,7 +11,6 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 
 /**
@@ -53,7 +52,7 @@ public class InputSecondPageFragment extends Fragment {
     public void onStart() {
         super.onStart();
         bundle = getArguments();
-        Toast.makeText(getContext(), bundle.getString("test"), Toast.LENGTH_SHORT).show();
+        //Toast.makeText(getContext(), bundle.getString("test"), Toast.LENGTH_SHORT).show();
     }
 
     @Override
@@ -61,6 +60,15 @@ public class InputSecondPageFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_input_second_page, container, false);
+        editTextAyamPotong = (TextInputEditText) view.findViewById(R.id.input_ayam_potong);
+        editTextIkanLele = (TextInputEditText) view.findViewById(R.id.input_ikan_lele);
+        editTextCabeMerah = (TextInputEditText) view.findViewById(R.id.input_cabe_merah);
+        editTextCabeHijau = (TextInputEditText) view.findViewById(R.id.input_cabe_hijau);
+        editTextBawangMerah = (TextInputEditText) view.findViewById(R.id.input_bawang_merah);
+        editTextCabeRawit = (TextInputEditText) view.findViewById(R.id.input_cabe_rawit);
+        editTextBawangPutih = (TextInputEditText) view.findViewById(R.id.input_bawang_putih);
+        editTextTomat = (TextInputEditText) view.findViewById(R.id.input_tomat);
+        editTextWortel = (TextInputEditText) view.findViewById(R.id.input_wortel;
 
         return view;
     }

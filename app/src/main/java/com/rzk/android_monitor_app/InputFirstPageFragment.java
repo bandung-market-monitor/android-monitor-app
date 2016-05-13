@@ -66,6 +66,16 @@ public class InputFirstPageFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_input_first_page, container, false);
+        editTextDate = (TextInputEditText) view.findViewById(R.id.input_date);
+        editTextPasar = (TextInputEditText) view.findViewById(R.id.input_pasar);
+        editTextBerasMedium = (TextInputEditText) view.findViewById(R.id.input_beras_medium);
+        editTextMinyakKelapa = (TextInputEditText) view.findViewById(R.id.input_minyak_kelapa);
+        editTextTepungTerigu = (TextInputEditText) view.findViewById(R.id.input_tepung_terigu);
+        editTextKacangKedelai = (TextInputEditText) view.findViewById(R.id.input_kacang_kedelai);
+        editTextGulaPasir = (TextInputEditText) view.findViewById(R.id.input_gula_pasir);
+        editTextMentega = (TextInputEditText) view.findViewById(R.id.input_mentega);
+        editTextTelurAyam = (TextInputEditText) view.findViewById(R.id.input_telur_ayam);
+        editTextDagingSapi = (TextInputEditText) view.findViewById(R.id.input_daging_sapi);
 
         return view;
     }
