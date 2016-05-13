@@ -19,7 +19,7 @@ public class LoginActivity extends AppCompatActivity {
 
     public void login(View view) {
         //create login process
-        Intent intent = new Intent(this, PriceInputActivity.class);
+        Intent intent = new Intent(this, MainMenuActivity.class);
         startActivity(intent);
     }
 }
