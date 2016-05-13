@@ -69,6 +69,7 @@ public class InputSecondPageFragment extends Fragment {
         editTextBawangPutih = (TextInputEditText) view.findViewById(R.id.input_bawang_putih);
         editTextTomat = (TextInputEditText) view.findViewById(R.id.input_tomat);
         editTextWortel = (TextInputEditText) view.findViewById(R.id.input_wortel);
+        editTextAyamPotong.requestFocus();
 
         return view;
     }
