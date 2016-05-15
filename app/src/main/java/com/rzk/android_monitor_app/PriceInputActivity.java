@@ -13,7 +13,7 @@ public class PriceInputActivity extends AppCompatActivity implements InputFirstP
         setContentView(R.layout.activity_price_input);
         firstPageFragment = new InputFirstPageFragment();
         getSupportFragmentManager().beginTransaction()
-                .add(R.id.fragment_container, firstPageFragment).commit();
+                .replace(R.id.fragment_container, firstPageFragment).commit();
         getSupportActionBar().setTitle(R.string.input_title);
 
     }

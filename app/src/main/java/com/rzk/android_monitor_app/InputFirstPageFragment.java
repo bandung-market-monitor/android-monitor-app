@@ -11,6 +11,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Spinner;
 
 
 /**
@@ -22,9 +23,10 @@ import android.view.ViewGroup;
 public class InputFirstPageFragment extends Fragment {
 
     private OnFragmentInteractionListener mListener;
-    private TextInputEditText editTextDate, editTextPasar, editTextBerasMedium, editTextMinyakKelapa;
+    private TextInputEditText editTextDate, editTextBerasMedium, editTextMinyakKelapa;
     private TextInputEditText editTextTepungTerigu, editTextKacangKedelai, editTextGulaPasir;
     private TextInputEditText editTextMentega, editTextTelurAyam, editTextDagingSapi;
+    private Spinner spinnerPasar;
 
     public InputFirstPageFragment() {
         // Required empty public constructor
@@ -67,7 +69,7 @@ public class InputFirstPageFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_input_first_page, container, false);
         editTextDate = (TextInputEditText) view.findViewById(R.id.input_date);
-        editTextPasar = (TextInputEditText) view.findViewById(R.id.input_pasar);
+        spinnerPasar = (Spinner) view.findViewById(R.id.input_pasar);
         editTextBerasMedium = (TextInputEditText) view.findViewById(R.id.input_beras_medium);
         editTextMinyakKelapa = (TextInputEditText) view.findViewById(R.id.input_minyak_kelapa);
         editTextTepungTerigu = (TextInputEditText) view.findViewById(R.id.input_tepung_terigu);

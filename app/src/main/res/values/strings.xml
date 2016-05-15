@@ -50,4 +50,11 @@
     <string name="save_item_text">Save</string>
     <string name="input_title">Input Data Barang</string>
     <string name="title_activity_main_menu">Home</string>
+    <array name="list_pasar">
+        <item>Pasar 1</item>
+        <item>Pasar 2</item>
+        <item>Pasar 3</item>
+        <item>Pasar 4</item>
+        <item>Pasar 5</item>
+    </array>
 </resources>
