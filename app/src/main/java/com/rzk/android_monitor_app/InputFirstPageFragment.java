@@ -13,6 +13,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Spinner;
 
+import com.wdullaer.materialdatetimepicker.date.DatePickerDialog;
+
+import java.util.Calendar;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -20,7 +24,7 @@ import android.widget.Spinner;
  * {@link InputFirstPageFragment.OnFragmentInteractionListener} interface
  * to handle interaction events.
  */
-public class InputFirstPageFragment extends Fragment {
+public class InputFirstPageFragment extends Fragment implements DatePickerDialog.OnDateSetListener {
 
     private OnFragmentInteractionListener mListener;
     private TextInputEditText editTextDate, editTextBerasMedium, editTextMinyakKelapa;
@@ -79,7 +83,27 @@ public class InputFirstPageFragment extends Fragment {
         editTextTelurAyam = (TextInputEditText) view.findViewById(R.id.input_telur_ayam);
         editTextDagingSapi = (TextInputEditText) view.findViewById(R.id.input_daging_sapi);
 
+        //create onclick to open datepicker
+        editTextDate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openDatePicker();
+            }
+        });
+
         return view;
+    }
+
+    private void openDatePicker() {
+        Calendar now = Calendar.getInstance();
+        DatePickerDialog dpd = DatePickerDialog.newInstance(
+                this,
+                now.get(Calendar.YEAR),
+                now.get(Calendar.MONTH),
+                now.get(Calendar.DAY_OF_MONTH)
+        );
+        dpd.show(getActivity().getFragmentManager(), "DatePickerDialog");
+
     }
 
     // TODO: Rename method, update argument and hook method into UI event
@@ -106,12 +130,18 @@ public class InputFirstPageFragment extends Fragment {
         mListener = null;
     }
 
+    @Override
+    public void onDateSet(DatePickerDialog view, int year, int monthOfYear, int dayOfMonth) {
+        editTextDate.setText(dayOfMonth+"/"+(++monthOfYear)+"/"+year);
+
+    }
+
     /**
      * This interface must be implemented by activities that contain this
      * fragment to allow an interaction in this fragment to be communicated
      * to the activity and potentially other fragments contained in that
      * activity.
-     * <p>
+     * <p/>
      * See the Android Training lesson <a href=
      * "http://developer.android.com/training/basics/fragments/communicating.html"
      * >Communicating with Other Fragments</a> for more information.
