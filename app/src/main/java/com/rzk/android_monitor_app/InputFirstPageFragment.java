@@ -71,7 +71,7 @@ public class InputFirstPageFragment extends Fragment implements DatePickerDialog
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_input_first_page, container, false);
+        final View view = inflater.inflate(R.layout.fragment_input_first_page, container, false);
         editTextDate = (TextInputEditText) view.findViewById(R.id.input_date);
         spinnerPasar = (Spinner) view.findViewById(R.id.input_pasar);
         editTextBerasMedium = (TextInputEditText) view.findViewById(R.id.input_beras_medium);
@@ -90,6 +90,7 @@ public class InputFirstPageFragment extends Fragment implements DatePickerDialog
                 openDatePicker();
             }
         });
+
 
         return view;
     }
@@ -132,7 +133,7 @@ public class InputFirstPageFragment extends Fragment implements DatePickerDialog
 
     @Override
     public void onDateSet(DatePickerDialog view, int year, int monthOfYear, int dayOfMonth) {
-        editTextDate.setText(dayOfMonth+"/"+(++monthOfYear)+"/"+year);
+        editTextDate.setText(dayOfMonth + "/" + (++monthOfYear) + "/" + year);
 
     }
 
