@@ -48,7 +48,7 @@
     <string name="text_save">Save</string>
     <string name="next_item_text">Next</string>
     <string name="save_item_text">Save</string>
-    <string name="input_title">Input Data Barang</string>
+    <string name="input_title">Input Data Harian</string>
     <string name="title_activity_main_menu">Home</string>
     <array name="list_pasar">
         <item>Pasar 1</item>
